@@ -1,4 +1,6 @@
-## Ottawa-311 conversion script (using Docker)
+## Ottawa-311 conversion script 
+
+Will show reproducible research setup. (using Docker)
 
 Try running one of these
 
@@ -13,7 +15,7 @@ Go to [SheetJS](http://sheetjs.com/sexql/)
 ### by hand...
 
     for i in xlsx/*xlsx; do echo $i; ./node_modules/.bin/xlsx -l $i; done
-    
+
     for i in xlsx/*xlsx; do echo $i; ./node_modules/.bin/xlsx $i >> csv/`basename $i .xlsx`.csv; done
 
 # docker...
